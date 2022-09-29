@@ -6,7 +6,7 @@ var pays = "France";
 
 // Accède à i en dehors de sa portée
 
-// Cas 2
+// Cas 2 : Problème de portée
 for (var i = 1; i <= 10; i++) {
   console.log("Dans la boucle : ", i);
 }
