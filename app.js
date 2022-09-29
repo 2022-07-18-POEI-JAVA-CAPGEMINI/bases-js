@@ -21,3 +21,9 @@ Nous sommes
 Vous êtes
 Elles/Ils sont
 `);
+
+// lecture clavier
+let prenom = prompt("Votre prenom: ");
+let nom = prompt("Votre nom: ");
+let age = prompt("Votre age: ");
+alert(`Vous vous appelez ${prenom} ${nom}, et vous avez ${age} ans.`);
