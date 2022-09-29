@@ -1,29 +1,32 @@
-let nombre1 = 45;
-let nombre2 = 55;
-let somme = nombre1 + nombre2;
-// console.log(somme);
-console.log(nombre1 + " + " + nombre2 + " = " + somme);
+let age = 17;
 
-// Template strings
-console.log(`${nombre1} + ${nombre2} = ${somme}`);
+if (age >= 18) {
+  console.log("Grand garçon!!!");
+} else {
+  console.log("Petit garçon!!!");
+}
 
-// Affichage sans template strings
-console.log(
-  "Je suis\nTu es\nElle/Il est\nNous sommes\nVous êtes\nElles/Ils sont"
-);
+// Ici, on ne compare que les valeurs, et non les types
+// Pas recommandée
+if (age == "17") {
+  console.log("Ouii");
+}
 
-// Affichage avec template strings
-console.log(`
-Je suis
-Tu es
-Elle/Il est
-Nous sommes
-Vous êtes
-Elles/Ils sont
-`);
+// Ici,  il s'agit d'une égalité stricte.Parce qu'on compare les types
+// et les valeurs
+if (age === "17") {
+  console.log("Noonnn");
+}
 
-// lecture clavier
-let prenom = prompt("Votre prenom: ");
-let nom = prompt("Votre nom: ");
-let age = prompt("Votre age: ");
-alert(`Vous vous appelez ${prenom} ${nom}, et vous avez ${age} ans.`);
+/**
+ * Opérateurs de comparaison & logiques
+ *   == : égalité
+ *   === : égalité stricte
+ *   >= : Supérieur ou égal
+ *  <= : Inférieur ou égal
+ *   != : Différent
+ *   !== : Différence strict
+ *   && : ET/AND
+ *   || : OU/OR
+ *   ! 
+ */
