@@ -1,7 +1,11 @@
+// {
+//     nom:"Apple Macbok Pro 16 2021",
+//     prix:`3500€`
+// }
 const articles = [
   {
     id: 1,
-    nom: "Macbook Pro 2021",
+    nom: "Macbook Pro 16 2021",
     fabricant: "Apple",
     prix: 3500,
     description: "Meilleur laptop du moment",
@@ -55,4 +59,10 @@ articles.forEach((article) => {
   console.log("\n\n");
 });
 
-
+const article2 = articles.map((article) => {
+  return {
+    id: article.id,
+    designation: `${article.fabricant} ${article.nom}`,
+    prix: `${article.prix} €`,
+  };
+});
