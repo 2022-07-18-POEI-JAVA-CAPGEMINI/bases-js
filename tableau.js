@@ -66,3 +66,22 @@ const article2 = articles.map((article) => {
     prix: `${article.prix} €`,
   };
 });
+
+// Destrcuturation
+const article3 = articles.map((article) => {
+  const { id, fabricant, nom, prix } = article;
+  return {
+    id: id,
+    designation: `${fabricant} ${nom}`,
+    prix: `${prix} €`,
+  };
+});
+
+// Destrcuturation v2
+const article4 = articles.map(({ id, nom, fabricant, prix }) => {
+  return {
+    id, // id:id
+    designation: `${fabricant} ${nom}`,
+    prix: `${prix} €`,
+  };
+});
