@@ -24,11 +24,3 @@ for (let nombre of nombres) {
   somme += nombre;
 }
 console.log(somme);
-
-// forEach
-// fruits.forEach(function (fruit) {
-//   console.log(`Foreach : ${fruit}`);
-// });
-fruits.forEach((fruit) => {
-  console.log(`Foreach : ${fruit}`);
-});
